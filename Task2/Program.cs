@@ -1,4 +1,6 @@
-﻿class Program
+﻿namespace Task2;
+
+class Program
 {
     internal static void Main()
     {

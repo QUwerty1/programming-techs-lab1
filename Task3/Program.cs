@@ -1,4 +1,6 @@
-﻿static class Program
+﻿namespace Task3;
+
+static class Program
 {
     internal static void Main()
     {
@@ -7,7 +9,7 @@
     }
 }
 
-static class Solver
+public static class Solver
 {
     /// <summary>
     /// Находит сумму чисел в строке

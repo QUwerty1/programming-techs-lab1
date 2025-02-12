@@ -1,7 +1,7 @@
 ﻿namespace Task1.Tests;
 
 [TestClass]
-public sealed class Test1
+public sealed class Tests
 {
     [TestMethod]
     public void K1()
