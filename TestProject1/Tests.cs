@@ -6,50 +6,42 @@ public sealed class Tests
     [TestMethod]
     public void K1()
     {
-        var money = new Money(0, 1);
-        Assert.AreEqual("У вас есть 1 копейка", money.ToString());
+        Assert.AreEqual("У вас есть 1 копейка", Solver.KopekToRubles(1).ToString());
 
     }
     [TestMethod]
     public void K2_4()
     {
-        var money = new Money(0, 2);
-        Assert.AreEqual("У вас есть 2 копейки", money.ToString());
+        Assert.AreEqual("У вас есть 2 копейки", Solver.KopekToRubles(2).ToString());
     }
     [TestMethod]
     public void K5_9()
     {
-        var money = new Money(0, 5);
-        Assert.AreEqual("У вас есть 5 копеек", money.ToString());
+        Assert.AreEqual("У вас есть 5 копеек", Solver.KopekToRubles(5).ToString());
     }
     [TestMethod]
     public void R1()
     {
-        var money = new Money(1, 0);
-        Assert.AreEqual("У вас есть 1 рубль", money.ToString());
+        Assert.AreEqual("У вас есть 1 рубль", Solver.KopekToRubles(100).ToString());
     }
     [TestMethod]
     public void R2_4()
     {
-        var money = new Money(2, 0);
-        Assert.AreEqual("У вас есть 2 рубля", money.ToString());
+       Assert.AreEqual("У вас есть 2 рубля", Solver.KopekToRubles(200).ToString());
     }
     [TestMethod]
     public void R5_9()
     {
-        var money = new Money(5, 0);
-        Assert.AreEqual("У вас есть 5 рублей", money.ToString());
+        Assert.AreEqual("У вас есть 5 рублей", Solver.KopekToRubles(500).ToString());
     }
     [TestMethod]
     public void NoMoney()
     {
-        var money = new Money(0, 0);
-        Assert.AreEqual("Денег нет, но вы держитесь", money.ToString());
+        Assert.AreEqual("Денег нет, но вы держитесь", Solver.KopekToRubles(0).ToString());
     }
     [TestMethod]
     public void RublesAndKopeks()
     {
-        var money = new Money(1, 1);
-        Assert.AreEqual("У вас есть 1 рубль и 1 копейка", money.ToString());
+        Assert.AreEqual("У вас есть 1 рубль и 1 копейка", Solver.KopekToRubles(101).ToString());
     }
 }
